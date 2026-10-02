@@ -7,7 +7,6 @@ local Types = require(RS:WaitForChild("InfoModules"):WaitForChild("Types"))
 
 local Signal = require(RS:WaitForChild("Utils"):WaitForChild("Signal"))
 
-local PlayerDataHandler = require(RS:WaitForChild("Networking"):WaitForChild("PlayerDataHandler"))
 local NetworkPackets = require(RS.Networking:WaitForChild("NetworkPackets"))
 
 --> TYPE <--
