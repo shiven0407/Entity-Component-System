@@ -59,4 +59,3 @@ state to be synchronised between server and clients.
 
 ## Credits
 - **Signal implementation pattern:** https://github.com/AlexanderLindholt/SignalPlus
-
