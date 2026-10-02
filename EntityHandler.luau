@@ -48,7 +48,7 @@ function Entity:removeTag(tag: string): ()
 end
 
 function Entity:hasTag(tag: string): boolean
-	return table.find(self.tags, tag)
+	return table.find(self.tags, tag) ~= nil
 end
 
 function Entity:destroy(): ()
@@ -120,7 +120,7 @@ function EntityHandler.queryTags(...)
 	for entityId, entity in EntityHandler.entities do
 		local valid = true
 		for _, tag in requiredTags do
-			if entity.tags[tag] then continue end
+			if table.find(entity.tags, tag) then continue end
 			valid = false
 			break
 		end
